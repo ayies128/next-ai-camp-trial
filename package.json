@@ -1,0 +1,15 @@
+{
+  "name": "next-ai-camp-trial",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd apps/trial-web && npm run dev",
+    "build": "cd apps/trial-web && npm run build",
+    "start": "cd apps/trial-web && npm run start",
+    "lint": "cd apps/trial-web && npm run lint",
+    "install:all": "cd apps/trial-web && npm install"
+  },
+  "workspaces": [
+    "apps/trial-web"
+  ]
+}
