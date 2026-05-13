@@ -1,24 +1,59 @@
 # 🎓 AIブートキャンプ 体験版（Session 0〜3）
 
-> **プログラミングを学ぶと同時に、AI（Claude Code）を使いこなす力も身につく。**
-> 完全未経験から、現役ベンチャーCTOがAI時代の学び方で導く教材の無料体験版です。
-
-## 🚀 この教材の最大の特徴
-
-| 普通のプログラミング教材 | この教材 |
-|---|---|
-| プログラミングだけ学べる | **プログラミング + AI協働スキル** が同時に身につく |
-| 写経・座学が中心 | **AI と対話しながら作る** 新しい学び方 |
-| 学んでも「使える」までは遠い | **学んだその日から AI と一緒に作れる** |
-
-**プログラミングを学びたい人だけでなく、「AI を仕事で使いこなしたい人」にも刺さる教材です。**
+> **プログラミング初心者が、Claude Code に「ページを書き換えて」と話しかけるだけで、本物の Next.js アプリが動く体験。**
+> 完全未経験から、ベンチャーCTOがAI時代の学び方で導く教材の無料体験版です。
 
 [![本編プラン](https://img.shields.io/badge/MENTA-本編プラン_¥5,500/月-f97316?style=for-the-badge)](https://menta.work/plan/20251)
+[![YouTube](https://img.shields.io/badge/YouTube-雰囲気を見る-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/channel/UC1rXVD9WYsQPQEWZyd-A1KA/)
 [![ライセンス](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](./LICENSE)
 
 ---
 
-## ⚡ 3分で動かす（クイックスタート）
+## 📺 まずは雰囲気だけ見てみる（環境構築不要）
+
+「いきなり git clone はちょっと…」という方は、こちらで先に雰囲気を確認できます。
+
+- **🎬 [YouTubeチャンネル](https://www.youtube.com/channel/UC1rXVD9WYsQPQEWZyd-A1KA/)** — Claude Code で学ぶ実演動画（毎日更新中）
+- **📝 [docs/roadmap-trial.md](docs/roadmap-trial.md)** — 体験版のロードマップ（4セッションの中身）
+- **📖 [docs/learning-protocol.md](docs/learning-protocol.md)** — 毎回の学習の進め方
+
+> 💡 不安なまま `git clone` するより、まず動画やドキュメントで「自分に合うか」確認してから進めるのがおすすめです。
+
+---
+
+## 🎁 git clone するとどんな体験ができる？
+
+`npm install && npm run dev` の **直後にできること** はこの3つです。
+
+### ① Claude Code に話しかけて、ページを書き換える体験
+
+```
+あなた:「トップページのタイトルを『私の学習ジャーニー』に変えて」
+Claude Code: → ファイルを開いて編集 → そのまま反映される
+```
+
+「コードを書くって、こんなことなのか」を **手を動かさずに体感** できます。
+
+### ② Next.js（実プロダクトでも使われるフレームワーク）を実際に動かす体験
+
+ローカルで動く本物の Next.js アプリ。Hello World ではなく、AI に話しかけながら拡張していける **本物の土台** です。
+
+### ③ AI 駆動開発の流れを、自分の手で掴む体験
+
+「AI に指示する → 動作を確認する → 次の指示を出す」というループを、**現役 CTO の現場と同じ流れ** で体感できます。
+
+> ⚠️ **画面イメージ（実物のスクショ/GIFはここに後日追加予定）**
+> 想像してみてください: ターミナルで `npm run dev` した後、Claude Code に「タイトル変えて」と話しかけると、ブラウザのページがそのまま書き換わる。コードを1行も自分で書かずに動く感動を、ローカルで体験できます。
+
+---
+
+## ⚡ 動かしてみる（3〜5分）
+
+### 必要なもの
+- Node.js 20 以上（[インストール](https://nodejs.org/)）
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)（Claude Pro 月$20）
+
+### 手順
 
 ```bash
 git clone https://github.com/ayies128/next-ai-camp-trial.git
@@ -29,9 +64,22 @@ npm run dev
 
 → ブラウザで http://localhost:3000 を開けば、**学習用ランディングページ** が表示されます。
 
-そこから先は **Claude Code に話しかけて、ページを書き換える体験** をスタート。
+そこからは [docs/learning-protocol.md](docs/learning-protocol.md) を開いて、**Claude Code に「Session 0 を始めて」と話しかける** だけ。
 
 > 💡 **動かなかったら？** [docs/setup.md](docs/setup.md) に詰まりやすいポイントの対処法があります。
+> どうしても解決しないときは、[GitHub Issues](https://github.com/ayies128/next-ai-camp-trial/issues) でお気軽にどうぞ。
+
+---
+
+## 🚀 この教材の最大の特徴
+
+| 普通のプログラミング教材 | この教材 |
+|---|---|
+| プログラミングだけ学べる | **プログラミング + AI協働スキル** が同時に身につく |
+| 写経・座学が中心 | **AI と対話しながら作る** 新しい学び方 |
+| 学んでも「使える」までは遠い | **学んだその日から AI と一緒に作れる** |
+
+**プログラミングを学びたい人だけでなく、「AI を仕事で使いこなしたい人」にも刺さる教材です。**
 
 ---
 
@@ -112,26 +160,42 @@ MENTAプランは月額制なので、**いつでも途中で解約できます*
 むしろ「業務知識」がある方が、AI と組んで作りたいものを作るときに強みになります。
 </details>
 
+<details>
+<summary><strong>環境構築でつまずいたら？</strong></summary>
+
+[docs/setup.md](docs/setup.md) に詰まりやすいポイントをまとめてあります。
+それでも解決しないときは [GitHub Issues](https://github.com/ayies128/next-ai-camp-trial/issues) で気軽にどうぞ。返信します。
+</details>
+
 ---
 
-## 🎓 本編プランを見る
+## 🎓 体験版の次のステップ
 
-体験版で「もうちょっと作ってみたい」と思ったら、本編プランへどうぞ。
-**全20セッション + CTOによる直接サポート** で、Webアプリを公開できるレベルまで導きます。
+「体験版で雰囲気は掴めた、もう少し作ってみたい」となったら、**自分のペースと予算に合わせて** 次のステップを選べます。
+
+### 🎯 ステップ1: 月額制で質問しながら進める（おすすめ）
+
+| プラン | 価格 | 特徴 |
+|---|---|---|
+| 🎓 **MENTA（メンター付き）** | ¥5,500/月〜 | **CTO に直接チャット相談**。質問しながら確実に進めたい人向け。いつでも解約可 |
+
+👉 https://menta.work/plan/20251
+
+### 📕 ステップ2: 買い切りで黙々と進める
 
 | チャネル | 価格 | こんな人におすすめ |
 |---------|------|------|
-| 🎓 **MENTA**（おすすめ） | ¥5,500/月〜 | 質問しながら確実に進めたい人。CTO に直接チャット相談できる。月額制でいつでも解約可 |
-| 📕 **Zenn Books** | ¥6,600（買い切り） | 自分のペースで黙々と進めたい人 |
-| 📘 **note** | ¥6,600（買い切り） | note で購入履歴を管理したい人 |
+| 📕 Zenn Books | ¥6,600（買い切り） | 自分のペースで黙々と進めたい人 |
+| 📘 note 有料教材 | ¥6,600（買い切り） | note で購入履歴を管理したい人 |
 
-🎯 **迷ったら MENTA がおすすめ** — 月額制なので、わからないところを先に解決できる安心感があります。
+👉 note: https://note.com/ennagara128/n/n209ec4a81a02
+👉 Zenn: https://zenn.dev/ennagara128
 
-### 本編リンク
+### 📺 無料で続ける選択肢もあり
 
-- 👉 **MENTA（メンター付きプラン）**: https://menta.work/plan/20251
-- 📕 Zenn Books: https://zenn.dev/ennagara128
-- 📘 note 有料教材: https://note.com/ennagara128/n/n209ec4a81a02
+- 📺 [YouTubeチャンネル](https://www.youtube.com/channel/UC1rXVD9WYsQPQEWZyd-A1KA/) — 実演動画を毎日更新中
+
+🎯 **迷ったら MENTA がおすすめ** — 月額制で、わからないところを先に解決できる安心感があります。
 
 ---
 
