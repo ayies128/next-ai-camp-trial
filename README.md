@@ -3,8 +3,8 @@
 > **プログラミング初心者が、Claude Code に「ページを書き換えて」と話しかけるだけで、本物の Next.js アプリが動く体験。**
 > 完全未経験から、ベンチャーCTOがAI時代の学び方で導く教材の無料体験版です。
 
-[![本編プラン](https://img.shields.io/badge/MENTA-本編プラン_¥5,500/月-f97316?style=for-the-badge)](https://menta.work/plan/20251)
-[![YouTube](https://img.shields.io/badge/YouTube-雰囲気を見る-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/channel/UC1rXVD9WYsQPQEWZyd-A1KA/)
+[![本編プラン](https://img.shields.io/badge/MENTA-本編プラン_¥5,500/月-f97316?style=for-the-badge)](https://menta.work/plan/20251?ref=github-trial)
+[![YouTube](https://img.shields.io/badge/YouTube-雰囲気を見る-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/channel/UC1rXVD9WYsQPQEWZyd-A1KA/?ref=github-trial)
 [![ライセンス](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](./LICENSE)
 
 ---
@@ -13,7 +13,7 @@
 
 「いきなり git clone はちょっと…」という方は、こちらで先に雰囲気を確認できます。
 
-- **🎬 [YouTubeチャンネル](https://www.youtube.com/channel/UC1rXVD9WYsQPQEWZyd-A1KA/)** — Claude Code で学ぶ実演動画（毎日更新中）
+- **🎬 [YouTubeチャンネル](https://www.youtube.com/channel/UC1rXVD9WYsQPQEWZyd-A1KA/?ref=github-trial)** — Claude Code で学ぶ実演動画（毎日更新中）
 - **📝 [docs/roadmap-trial.md](docs/roadmap-trial.md)** — 体験版のロードマップ（4セッションの中身）
 - **📖 [docs/learning-protocol.md](docs/learning-protocol.md)** — 毎回の学習の進め方
 
@@ -179,7 +179,7 @@ MENTAプランは月額制なので、**いつでも途中で解約できます*
 |---|---|---|
 | 🎓 **MENTA（メンター付き）** | ¥5,500/月〜 | **CTO に直接チャット相談**。質問しながら確実に進めたい人向け。いつでも解約可 |
 
-👉 https://menta.work/plan/20251
+👉 https://menta.work/plan/20251?ref=github-trial
 
 ### 📕 ステップ2: 買い切りで黙々と進める
 
@@ -188,12 +188,12 @@ MENTAプランは月額制なので、**いつでも途中で解約できます*
 | 📕 Zenn Books | ¥6,600（買い切り） | 自分のペースで黙々と進めたい人 |
 | 📘 note 有料教材 | ¥6,600（買い切り） | note で購入履歴を管理したい人 |
 
-👉 note: https://note.com/ennagara128/n/n209ec4a81a02
-👉 Zenn: https://zenn.dev/ennagara128
+👉 note: https://note.com/ennagara128/n/n209ec4a81a02?ref=github-trial
+👉 Zenn: https://zenn.dev/ennagara128?ref=github-trial
 
 ### 📺 無料で続ける選択肢もあり
 
-- 📺 [YouTubeチャンネル](https://www.youtube.com/channel/UC1rXVD9WYsQPQEWZyd-A1KA/) — 実演動画を毎日更新中
+- 📺 [YouTubeチャンネル](https://www.youtube.com/channel/UC1rXVD9WYsQPQEWZyd-A1KA/?ref=github-trial) — 実演動画を毎日更新中
 
 🎯 **迷ったら MENTA がおすすめ** — 月額制で、わからないところを先に解決できる安心感があります。
 
