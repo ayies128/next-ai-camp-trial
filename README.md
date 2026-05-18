@@ -7,6 +7,9 @@
 [![YouTube](https://img.shields.io/badge/YouTube-雰囲気を見る-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/channel/UC1rXVD9WYsQPQEWZyd-A1KA/?ref=github-trial)
 [![ライセンス](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](./LICENSE)
 
+> ⭐ **この教材が気になったら、ぜひ Star をお願いします！**
+> Star は教材作成者への何よりの応援になります。あなたの Star が、AI 時代の初心者向け教材を増やすモチベーションになります 🙏
+
 ---
 
 ## 📺 まずは雰囲気だけ見てみる（環境構築不要）
@@ -225,3 +228,22 @@ next-ai-camp-trial/
 ## 📜 ライセンス
 
 MIT License — 個人学習・商用利用ともに可
+
+---
+
+## 🙏 最後に: Star でお気持ちを応援してください
+
+ここまで読んでいただきありがとうございます。
+
+もしこの教材が「面白そう」「自分にも使えそう」と感じたら、**⭐ Star をお願いします**！
+
+Star をつけてくれる人が増えると：
+- AI 時代の初心者向け教材を増やすモチベーションになる
+- 他の学習者の方の目に止まりやすくなる（GitHub のアルゴリズム）
+- 教材アップデートの優先順位を上げられる
+
+Star は **30秒でできる、最大の応援** です 🌟
+
+→ [⭐ このリポジトリに Star をつける](https://github.com/ayies128/next-ai-camp-trial/stargazers)
+
+教材について気になることがあれば、お気軽に [GitHub Issues](https://github.com/ayies128/next-ai-camp-trial/issues) からどうぞ。
