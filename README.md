@@ -12,15 +12,20 @@
 
 ---
 
-## 📺 まずは雰囲気だけ見てみる（環境構築不要）
+## ⚡ 今すぐ触ってみる（3分・コピペするだけ）
 
-「いきなり git clone はちょっと…」という方は、こちらで先に雰囲気を確認できます。
+**対象**: プログラミング未経験〜初心者／AI を仕事で使いこなしたい人
+**3分後に体験できること**: Claude Code に話しかけると、ブラウザのページがそのまま書き換わる（コードは1行も書かなくてOK）
 
-- **🎬 [YouTubeチャンネル](https://www.youtube.com/channel/UC1rXVD9WYsQPQEWZyd-A1KA/?ref=github-trial)** — Claude Code で学ぶ実演動画（毎日更新中）
-- **📝 [docs/roadmap-trial.md](docs/roadmap-trial.md)** — 体験版のロードマップ（4セッションの中身）
-- **📖 [docs/learning-protocol.md](docs/learning-protocol.md)** — 毎回の学習の進め方
+```bash
+git clone https://github.com/ayies128/next-ai-camp-trial.git
+cd next-ai-camp-trial
+npm install && npm run dev
+```
 
-> 💡 不安なまま `git clone` するより、まず動画やドキュメントで「自分に合うか」確認してから進めるのがおすすめです。
+→ ブラウザで http://localhost:3000 を開いたら、[docs/learning-protocol.md](docs/learning-protocol.md) を見ながら Claude Code に「Session 0 を始めて」と話しかけるだけ。
+
+> 💡 必要なのは Node.js 20+ と [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)（Claude Pro 月$20）。「いきなり clone はちょっと…」という人は、下の「📺 まだ不安なら、雰囲気だけ見てみる」からどうぞ。
 
 ---
 
@@ -50,27 +55,28 @@ Claude Code: → ファイルを開いて編集 → そのまま反映される
 
 ---
 
-## ⚡ 動かしてみる（3〜5分）
+## 🔧 必要なものと、つまずいたとき
 
 ### 必要なもの
 - Node.js 20 以上（[インストール](https://nodejs.org/)）
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)（Claude Pro 月$20）
 
-### 手順
-
-```bash
-git clone https://github.com/ayies128/next-ai-camp-trial.git
-cd next-ai-camp-trial
-npm install
-npm run dev
-```
-
-→ ブラウザで http://localhost:3000 を開けば、**学習用ランディングページ** が表示されます。
-
-そこからは [docs/learning-protocol.md](docs/learning-protocol.md) を開いて、**Claude Code に「Session 0 を始めて」と話しかける** だけ。
+clone 後の流れは [docs/learning-protocol.md](docs/learning-protocol.md) にまとまっています。`npm run dev` で http://localhost:3000 を開いたら、**Claude Code に「Session 0 を始めて」と話しかける** だけで進みます。
 
 > 💡 **動かなかったら？** [docs/setup.md](docs/setup.md) に詰まりやすいポイントの対処法があります。
 > どうしても解決しないときは、[GitHub Issues](https://github.com/ayies128/next-ai-camp-trial/issues) でお気軽にどうぞ。
+
+---
+
+## 📺 まだ不安なら、雰囲気だけ見てみる（環境構築不要）
+
+「いきなり git clone はちょっと…」という方は、こちらで先に雰囲気を確認できます。
+
+- **🎬 [YouTubeチャンネル](https://www.youtube.com/channel/UC1rXVD9WYsQPQEWZyd-A1KA/?ref=github-trial)** — Claude Code で学ぶ実演動画（毎日更新中）
+- **📝 [docs/roadmap-trial.md](docs/roadmap-trial.md)** — 体験版のロードマップ（4セッションの中身）
+- **📖 [docs/learning-protocol.md](docs/learning-protocol.md)** — 毎回の学習の進め方
+
+> 💡 動画やドキュメントで「自分に合うか」確認してから進めるのもアリです。
 
 ---
 
