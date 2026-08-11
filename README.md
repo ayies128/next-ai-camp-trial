@@ -3,6 +3,7 @@
 > **プログラミング初心者が、Claude Code に「ページを書き換えて」と話しかけるだけで、本物の Next.js アプリが動く体験。**
 > 完全未経験から、ベンチャーCTOがAI時代の学び方で導く教材の無料体験版です。
 
+[![ライブデモ](https://img.shields.io/badge/▶_ライブデモ-インストール不要で見る-22c55e?style=for-the-badge)](https://trial-web-ayies128s-projects.vercel.app)
 [![本編プラン](https://img.shields.io/badge/MENTA-本編プラン_¥5,500/月-f97316?style=for-the-badge)](https://menta.work/plan/20251?ref=github-trial)
 [![YouTube](https://img.shields.io/badge/YouTube-雰囲気を見る-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/channel/UC1rXVD9WYsQPQEWZyd-A1KA/?ref=github-trial)
 [![ライセンス](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](./LICENSE)
@@ -12,10 +13,21 @@
 
 ---
 
-## ⚡ 今すぐ触ってみる（3分・コピペするだけ）
+## ▶ まず、動くものをブラウザで見る（インストール不要・無料）
+
+**何もインストールせずに、この教材で最初に作るページをそのまま見られます。**
+
+### 👉 [https://trial-web-ayies128s-projects.vercel.app](https://trial-web-ayies128s-projects.vercel.app)
 
 **対象**: プログラミング未経験〜初心者／AI を仕事で使いこなしたい人
-**3分後に体験できること**: Claude Code に話しかけると、ブラウザのページがそのまま書き換わる（コードは1行も書かなくてOK）
+
+リンクを開くだけです。アカウント登録も、ダウンロードも、課金も要りません。「プログラミングの教材って、結局どんな画面になるの？」がその場で分かります。
+
+---
+
+## ⚡ 自分の手元で動かす（3分・コピペするだけ）
+
+上のページを自分のパソコンで動かして、**Claude Code に話しかけて書き換える**ところからが本編です。
 
 ```bash
 git clone https://github.com/ayies128/next-ai-camp-trial.git
@@ -25,7 +37,7 @@ npm install && npm run dev
 
 → ブラウザで http://localhost:3000 を開いたら、[docs/learning-protocol.md](docs/learning-protocol.md) を見ながら Claude Code に「Session 0 を始めて」と話しかけるだけ。
 
-> 💡 必要なのは Node.js 20+ と [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)（Claude Pro 月$20）。「いきなり clone はちょっと…」という人は、下の「📺 まだ不安なら、雰囲気だけ見てみる」からどうぞ。
+> 💡 ここから先は Node.js 20+ と [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)（Claude Pro 月$20）が必要です。**まずは上のリンクで中身を見てから**判断してください。
 
 ---
 
