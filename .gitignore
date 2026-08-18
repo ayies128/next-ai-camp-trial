@@ -45,3 +45,8 @@ next-env.d.ts
 
 # Claude Code
 .claude/
+
+# 学習者ごとの記録（教材本体には含めない）
+knowledge/sessions/*.md
+!knowledge/sessions/README.md
+knowledge/profile.md

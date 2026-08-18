@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AIブートキャンプ 体験版 | Claude Code × Next.js",
+  title: "60秒で触れるWebのしくみ | AIブートキャンプ体験版",
   description:
-    "プログラミング完全未経験から、AI（Claude Code）と一緒にWebアプリを作って公開できるレベルへ。体験版（Session 0〜3）。",
+    "名前、目的、色、ボタンを操作して、HTML・CSS・JavaScript が画面に与える変化を60秒で体験できるプレビューです。",
 };
 
 export default function RootLayout({
