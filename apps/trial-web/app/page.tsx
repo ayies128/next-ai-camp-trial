@@ -83,10 +83,10 @@ export default function Home() {
             </div>
 
             <aside className="rounded-2xl border border-amber-200 bg-amber-50/80 p-4 text-sm leading-6 text-amber-950 dark:border-amber-900/70 dark:bg-amber-950/30 dark:text-amber-100">
-              <p className="font-bold">これは本編の先取りデモです</p>
+              <p className="font-bold">これは完成見本を触る、先取りデモです</p>
               <p className="mt-1">
                 体験版の Session 0〜3 は、プロジェクトの歩き方・ターミナル・Git・GitHub という共通の道具をそろえる準備の時間。
-                このプレビューは、その先の本編 Session 6〜7 でつくる HTML／CSS／JavaScript の成果物を先に触れるものです。
+                今はコードを読んだり、同じものをつくったりする必要はありません。HTML（中身）・CSS（見た目）・JavaScript（ブラウザの反応）の役割を、触って先に感じるための見本です。
               </p>
             </aside>
           </div>
@@ -130,7 +130,7 @@ export default function Home() {
                     />
                   </label>
                   <p className="mt-2 text-xs leading-5 text-stone-500 dark:text-stone-400">
-                    入力した名前が、右の見出しに現れます。
+                    入力欄を置くのは HTML。入力を受け取り、見出しを変える反応は JavaScript です。
                   </p>
                 </li>
 
@@ -168,7 +168,7 @@ export default function Home() {
                     </div>
                   </fieldset>
                   <p className="mt-2 text-xs leading-5 text-stone-500 dark:text-stone-400">
-                    選んだ雰囲気が、右の背景とアクセントカラーに反映されます。
+                    色や余白の見た目を決めるのは CSS。押してテーマを切り替える反応は JavaScript です。
                   </p>
                 </li>
 
@@ -177,7 +177,7 @@ export default function Home() {
                     <span className="flex h-8 w-8 items-center justify-center rounded-full bg-violet-100 text-sm font-black text-violet-700 dark:bg-violet-950 dark:text-violet-200">3</span>
                     <div>
                       <h3 className="font-black">JavaScript = 反応</h3>
-                      <p className="text-sm text-stone-500 dark:text-stone-400">選択やボタンに、変化をつけます。</p>
+                      <p className="text-sm text-stone-500 dark:text-stone-400">入力やクリックを受け取り、HTML の中身や CSS の見た目を切り替えます。</p>
                     </div>
                   </div>
                   <label className="block text-sm font-bold text-stone-700 dark:text-stone-200">
@@ -195,7 +195,7 @@ export default function Home() {
                     </select>
                   </label>
                   <p className="mt-2 text-xs leading-5 text-stone-500 dark:text-stone-400">
-                    選択内容と、右の「いいね！」ボタンの数がすぐ変わります。
+                    名前入力・テーマ選択・この「いいね！」の反応は、JavaScript の仕事です。
                   </p>
                 </li>
               </ol>
@@ -275,7 +275,7 @@ export default function Home() {
               <h2 className="mt-2 text-2xl font-black sm:text-3xl">体験版は、ここをつくるための土台から始めます。</h2>
               <p className="mt-3 max-w-2xl leading-7 text-stone-300">
                 Session 0〜3 では、プロジェクトの歩き方、ターミナル、Git、GitHub という共通の道具を学びます。
-                この画面のようなページを自分の手でつくるのは、その次の本編です。
+                本編 Session 6 では、HTML で中身、CSS で見た目を小さく自分でつくります。Session 7 では、JavaScript でブラウザの反応も小さくつくります。
               </p>
             </div>
             <Link
