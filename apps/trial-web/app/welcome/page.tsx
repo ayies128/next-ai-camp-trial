@@ -1,87 +1,94 @@
 import Link from "next/link";
 
-/**
- * 🎯 ミッション 2: このページに「自分のお気に入り」を3つ表示しよう
- *
- * Claude Code にこう話しかけてみよう:
- * 「app/welcome/page.tsx の "お気に入り3つ" のリストを、
- *  私のお気に入り（例: 映画3本）に書き換えて」
- *
- * 自分のデータに書き換わるのを見ると、「自分が作ってる感」が一気に出ます 🚀
- */
-export default function Welcome() {
-  // ⭐ ここを Claude Code に書き換えてもらおう
-  const favorites = [
-    { name: "お気に入り1", reason: "理由をここに書く" },
-    { name: "お気に入り2", reason: "理由をここに書く" },
-    { name: "お気に入り3", reason: "理由をここに書く" },
-  ];
+const roles = [
+  {
+    name: "HTML",
+    metaphor: "部屋の骨組み",
+    description: "見出し、文章、入力欄、ボタンなど「何を置くか」を決めます。",
+    color: "bg-orange-100 text-orange-800 dark:bg-orange-950 dark:text-orange-200",
+  },
+  {
+    name: "CSS",
+    metaphor: "部屋の内装",
+    description: "色、余白、文字の大きさなど「どう見せるか」を整えます。",
+    color: "bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-200",
+  },
+  {
+    name: "JavaScript",
+    metaphor: "部屋のしかけ",
+    description: "入力やクリックを受け取り「どう反応するか」を決めます。",
+    color: "bg-violet-100 text-violet-800 dark:bg-violet-950 dark:text-violet-200",
+  },
+];
 
+export default function Welcome() {
   return (
-    <main className="min-h-screen px-6 py-16 sm:px-12">
-      <div className="mx-auto max-w-3xl">
+    <main className="min-h-screen px-4 py-5 sm:px-8 sm:py-10">
+      <div className="mx-auto max-w-4xl">
         <Link
           href="/"
-          className="mb-8 inline-block text-sm text-zinc-500 hover:text-orange-600 dark:text-zinc-400"
+          className="inline-flex items-center gap-2 rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-bold text-stone-700 transition hover:border-stone-400 hover:bg-stone-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-200 dark:hover:bg-stone-800"
         >
-          ← トップに戻る
+          ← プレビューに戻る
         </Link>
 
-        <header className="mb-10">
-          <p className="mb-3 inline-flex items-center gap-2 rounded-full bg-orange-100 px-4 py-1 text-sm font-medium text-orange-700 dark:bg-orange-950 dark:text-orange-200">
-            🎯 ミッション 2
-          </p>
-          <h1 className="mb-3 text-3xl font-bold tracking-tight sm:text-4xl">
-            自分のデータに書き換えて、
-            <br />
-            「作ってる感」を体感しよう
-          </h1>
-          <p className="text-zinc-600 dark:text-zinc-400">
-            下のリストはダミー。Claude Code に「自分のお気に入り（映画/本/食べ物など）に書き換えて」と頼んでみよう。
+        <header className="mt-8 rounded-[2rem] border border-stone-200 bg-white/80 px-6 py-8 shadow-sm backdrop-blur sm:px-10 sm:py-10 dark:border-stone-800 dark:bg-stone-950/70">
+          <p className="text-sm font-bold tracking-[0.16em] text-orange-600 dark:text-orange-400">ABOUT THIS PREVIEW</p>
+          <h1 className="mt-3 text-4xl font-black tracking-[-0.04em] sm:text-5xl">今触ったものは、何だったの？</h1>
+          <p className="mt-5 max-w-3xl text-base leading-8 text-stone-600 sm:text-lg dark:text-stone-300">
+            トップのミニページは、Webページをつくる3つの役割を、コードを書かずに先取り体験できるデモです。
+            入力・選択・ボタンの変化を通して、画面がただの画像ではなく「反応するもの」だと感じてもらうために置いています。
           </p>
         </header>
 
-        <section className="mb-12">
-          <h2 className="mb-6 text-xl font-bold">⭐ お気に入り3つ</h2>
-          <ul className="grid gap-4 sm:grid-cols-3">
-            {favorites.map((fav, i) => (
-              <li
-                key={i}
-                className="rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900"
-              >
-                <div className="mb-2 text-2xl">⭐</div>
-                <h3 className="mb-1 font-bold">{fav.name}</h3>
-                <p className="text-sm text-zinc-600 dark:text-zinc-400">{fav.reason}</p>
-              </li>
+        <section className="mt-6 rounded-[2rem] border border-amber-200 bg-amber-50/80 p-6 sm:p-8 dark:border-amber-900/70 dark:bg-amber-950/30" aria-labelledby="scope-title">
+          <p className="text-sm font-bold tracking-[0.16em] text-amber-800 dark:text-amber-200">WHERE IT FITS</p>
+          <h2 id="scope-title" className="mt-2 text-2xl font-black text-amber-950 dark:text-amber-50">体験版の内容そのものではありません</h2>
+          <p className="mt-3 leading-7 text-amber-950/80 dark:text-amber-100/85">
+            無料の体験版は Session 0〜3。まずはプロジェクトの歩き方、ターミナル、変更を記録する Git、共有のための GitHub という共通の道具を学びます。
+            このプレビューは、その土台の先にある本編 Session 6〜7 の「HTML・CSS・JavaScript でページをつくる」学びを、のぞいてもらうためのものです。
+          </p>
+        </section>
+
+        <section className="mt-10" aria-labelledby="roles-title">
+          <div className="mb-5">
+            <p className="text-sm font-bold tracking-[0.16em] text-orange-600 dark:text-orange-400">THE THREE ROLES</p>
+            <h2 id="roles-title" className="mt-1 text-2xl font-black sm:text-3xl">画面の変化を、3つに分けて見る</h2>
+          </div>
+          <div className="grid gap-4 md:grid-cols-3">
+            {roles.map((role) => (
+              <article key={role.name} className="rounded-2xl border border-stone-200 bg-white p-5 shadow-sm dark:border-stone-800 dark:bg-stone-950">
+                <span className={`inline-flex rounded-full px-2.5 py-1 text-xs font-black ${role.color}`}>{role.name}</span>
+                <h3 className="mt-4 text-xl font-black">{role.metaphor}</h3>
+                <p className="mt-2 text-sm leading-6 text-stone-600 dark:text-stone-300">{role.description}</p>
+              </article>
             ))}
-          </ul>
+          </div>
         </section>
 
-        <section className="mb-12 rounded-2xl border-2 border-dashed border-orange-300 bg-orange-50 p-6 dark:border-orange-800 dark:bg-orange-950/30">
-          <h2 className="mb-3 text-xl font-bold">💡 やってみるとわかること</h2>
-          <ul className="space-y-2 text-zinc-700 dark:text-zinc-300">
-            <li>✅ 配列（リスト）にデータを入れると、繰り返し表示される（map）</li>
-            <li>✅ オブジェクト（{"{ name, reason }"}）でデータをまとめられる</li>
-            <li>✅ Claude Code はファイルを横断的に読んで編集できる</li>
-          </ul>
-          <p className="mt-4 text-sm text-zinc-600 dark:text-zinc-400">
-            ここで触れた「配列」「オブジェクト」「map」は、本編 Session 6 で詳しく学びます。
+        <section className="mt-10 rounded-[2rem] bg-stone-900 px-6 py-8 text-white sm:px-10" aria-labelledby="next-title">
+          <p className="text-sm font-bold tracking-[0.16em] text-orange-300">FROM PREVIEW TO PRACTICE</p>
+          <h2 id="next-title" className="mt-2 text-2xl font-black sm:text-3xl">「見た」から「自分でつくれた」へ。</h2>
+          <p className="mt-3 max-w-2xl leading-7 text-stone-300">
+            プレビューを触っただけでは、まだコードを書けるようになるわけではありません。
+            体験版で土台をつくり、本編で一つずつ自分の手を動かすことで、この変化を自分で生み出せるようになります。
           </p>
-        </section>
-
-        <section className="rounded-2xl bg-gradient-to-br from-orange-50 to-amber-50 p-8 dark:from-orange-950/40 dark:to-amber-950/40">
-          <h2 className="mb-3 text-2xl font-bold">🎓 もっと作りたくなったら</h2>
-          <p className="mb-5 text-zinc-700 dark:text-zinc-300">
-            体験版は Session 0〜3 まで。本編では <strong>ログイン機能つきWebアプリ</strong> を作ってインターネットに公開できます。
-          </p>
-          <a
-            href="https://menta.work/plan/20251"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-orange-600 px-6 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-orange-700"
-          >
-            🎓 本編プランを見る（MENTA 月5,500円〜）
-          </a>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link
+              href="/"
+              className="inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-black text-stone-900 transition hover:bg-orange-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              もう一度プレビューを触る
+            </Link>
+            <a
+              href="https://menta.work/plan/20251"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full border border-stone-600 px-5 py-3 text-sm font-black text-white transition hover:border-stone-400 hover:bg-stone-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              本編の内容を見る（MENTA）
+            </a>
+          </div>
         </section>
       </div>
     </main>

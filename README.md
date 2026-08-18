@@ -1,271 +1,131 @@
-# 🎓 AIブートキャンプ 体験版（Session 0〜3）
+# 🎓 AI ブートキャンプ — 無料体験版（Session 0〜3）
 
-> **プログラミング初心者が、Claude Code に「ページを書き換えて」と話しかけるだけで、本物の Next.js アプリが動く体験。**
-> 完全未経験から、ベンチャーCTOがAI時代の学び方で導く教材の無料体験版です。
+**「何を学ぶのか」と「自分で進められそうか」を、4セッションで確かめるための体験版です。**
 
-[![ライブデモ](https://img.shields.io/badge/▶_ライブデモ-インストール不要で見る-22c55e?style=for-the-badge)](https://trial-web-ayies128s-projects.vercel.app)
-[![本編プラン](https://img.shields.io/badge/MENTA-本編プラン_¥5,500/月-f97316?style=for-the-badge)](https://menta.work/plan/20251?ref=github-trial)
-[![YouTube](https://img.shields.io/badge/YouTube-雰囲気を見る-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/channel/UC1rXVD9WYsQPQEWZyd-A1KA/?ref=github-trial)
+プログラミング完全未経験でも大丈夫です。セットアップが済んだら、AI が進行役になります。あなたは「次は何をすればいい？」と聞くだけで進められます 🙌
+
+[![ブラウザで試す](https://img.shields.io/badge/▶_ブラウザで60秒プレビュー-インストール不要-22c55e?style=for-the-badge)](https://trial-web-ayies128s-projects.vercel.app)
 [![ライセンス](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](./LICENSE)
 
-> ⭐ **この教材が気になったら、ぜひ Star をお願いします！**
-> Star は教材作成者への何よりの応援になります。あなたの Star が、AI 時代の初心者向け教材を増やすモチベーションになります 🙏
+---
+
+## ▶ まず、ブラウザで「変わる」を試す（インストール不要）
+
+### 👉 [60秒プレビューを開く](https://trial-web-ayies128s-projects.vercel.app)
+
+開いたら、画面の **名前** を入れ、**作りたいもの** と **色** を選び、**「いいね！」** を押してください。
+あなたの操作に合わせて、画面の見出し・見た目・応援の数がその場で変わります。
+
+これは「コードを変えるとブラウザの表示が変わる」感覚を、コードもアカウントもなしで確かめるための**完成見本**です。
+
+> ⚠️ このプレビューは体験版の Session 0〜3 そのものではありません。実際の学習は、いきなり Next.js や `npm run dev` を使わず、まず道具の正体を知るところから始めます。画面づくりは本編の Session 6 以降で段階的に学びます。
 
 ---
 
-## ▶ まず、動くものをブラウザで見る（インストール不要・無料）
+## 🎁 体験版で本当にやること
 
-**何もインストールせずに、この教材で最初に作るページをそのまま見られます。**
+体験版は、本編と同じ最初の4セッションです。すべて **⓪ 共通の道具** のエリア。あとでフロントエンド・バックエンド・インフラを作るための「操縦席」を先に整えます。
 
-### 👉 [https://trial-web-ayies128s-projects.vercel.app](https://trial-web-ayies128s-projects.vercel.app)
+| Session | テーマ | できるようになること | 目安 |
+|---|---|---|---|
+| 0 | プロジェクトの歩き方 | AI と一緒に進める学び方をつかむ | 30分 |
+| 1 | ターミナルとファイルの世界 | パソコンの中を安全に探検できる | 45分 |
+| 2 | Git ってなに？ | 変更を「セーブポイント」として記録できる | 45分 |
+| 3 | GitHub を使ってみよう | 記録をオンラインに置き、共有する仕組みが分かる | 45分 |
 
-**対象**: プログラミング未経験〜初心者／AI を仕事で使いこなしたい人
+> 🗺 4つのセッションが全体のどこにあるかは、[技術地図](docs/tech-map.md) でいつでも確認できます。
 
-リンクを開くだけです。アカウント登録も、ダウンロードも、課金も要りません。「プログラミングの教材って、結局どんな画面になるの？」がその場で分かります。
+各セッションは「説明を1つ読む → すぐ小さく動かす」のリズムです。最後には教材を閉じて、自分の言葉や手で再現します。**「動いた」だけでなく「説明できた」**をゴールにします。
 
 ---
 
-## ⚡ 自分の手元で動かす（3分・コピペするだけ）
+## 🚀 はじめかた
 
-上のページを自分のパソコンで動かして、**Claude Code に話しかけて書き換える**ところからが本編です。
+**セットアップまでは、この README と [セットアップガイド](docs/setup.md) を使います。**
+Session 0 からは、AI が案内役です。
 
-```bash
-git clone https://github.com/ayies128/next-ai-camp-trial.git
-cd next-ai-camp-trial
-npm install && npm run dev
+1. [セットアップガイド](docs/setup.md) を上から進め、GitHub 上でこのリポジトリをフォークして自分のパソコンに clone します
+2. VS Code で `next-ai-camp-trial` フォルダを開き、使う AI（Claude Code または Codex）にサインインします
+3. AI のパネルに、次をそのまま送ります
+
+```text
+はじめまして。プログラミングは完全に未経験です。
+このリポジトリで無料体験版を始めます。
+
+ここから先の進行は、あなたがリードしてください。
+どのファイルをいつ読むか、次に何をするかは、毎回あなたから指示してください。
+準備ができたら、Session 0 から始めたいです。
 ```
 
-→ ブラウザで http://localhost:3000 を開いたら、[docs/learning-protocol.md](docs/learning-protocol.md) を見ながら Claude Code に「Session 0 を始めて」と話しかけるだけ。
+### Session 0 からは「AI が教室」
 
-> 💡 ここから先は Node.js 20+ と [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)（Claude Pro 月$20）が必要です。**まずは上のリンクで中身を見てから**判断してください。
-
----
-
-## 🎁 git clone するとどんな体験ができる？
-
-`npm install && npm run dev` の **直後にできること** はこの3つです。
-
-### ① Claude Code に話しかけて、ページを書き換える体験
-
-```
-あなた:「トップページのタイトルを『私の学習ジャーニー』に変えて」
-Claude Code: → ファイルを開いて編集 → そのまま反映される
-```
-
-「コードを書くって、こんなことなのか」を **手を動かさずに体感** できます。
-
-### ② Next.js（実プロダクトでも使われるフレームワーク）を実際に動かす体験
-
-ローカルで動く本物の Next.js アプリ。Hello World ではなく、AI に話しかけながら拡張していける **本物の土台** です。
-
-### ③ AI 駆動開発の流れを、自分の手で掴む体験
-
-「AI に指示する → 動作を確認する → 次の指示を出す」というループを、**現役 CTO の現場と同じ流れ** で体感できます。
-
-> 🎬 **clone 後、画面で実際に起きること（30秒の流れ）**
-> 1. ターミナルで `npm run dev` → ブラウザで http://localhost:3000 が開く
-> 2. Claude Code に「トップのタイトルを『私の学習ジャーニー』に変えて」と入力
-> 3. 数秒後、ブラウザのタイトルがそのまま書き換わる ✨
->
-> コードは1行も書きません。「AI に話しかけたら、自分のアプリが変わる」を、最初の数分で体験できます。
-
----
-
-## 🔧 必要なものと、つまずいたとき
-
-### 必要なもの
-- Node.js 20 以上（[インストール](https://nodejs.org/)）
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)（Claude Pro 月$20）
-
-clone 後の流れは [docs/learning-protocol.md](docs/learning-protocol.md) にまとまっています。`npm run dev` で http://localhost:3000 を開いたら、**Claude Code に「Session 0 を始めて」と話しかける** だけで進みます。
-
-> 💡 **動かなかったら？** [docs/setup.md](docs/setup.md) に詰まりやすいポイントの対処法があります。
-> どうしても解決しないときは、[GitHub Issues](https://github.com/ayies128/next-ai-camp-trial/issues) でお気軽にどうぞ。
-
----
-
-## 📺 まだ不安なら、雰囲気だけ見てみる（環境構築不要）
-
-「いきなり git clone はちょっと…」という方は、こちらで先に雰囲気を確認できます。
-
-- **🎬 [YouTubeチャンネル](https://www.youtube.com/channel/UC1rXVD9WYsQPQEWZyd-A1KA/?ref=github-trial)** — Claude Code で学ぶ実演動画（毎日更新中）
-- **📝 [docs/roadmap-trial.md](docs/roadmap-trial.md)** — 体験版のロードマップ（4セッションの中身）
-- **📖 [docs/learning-protocol.md](docs/learning-protocol.md)** — 毎回の学習の進め方
-
-> 💡 動画やドキュメントで「自分に合うか」確認してから進めるのもアリです。
-
----
-
-## 🚀 この教材の最大の特徴
-
-| 普通のプログラミング教材 | この教材 |
-|---|---|
-| プログラミングだけ学べる | **プログラミング + AI協働スキル** が同時に身につく |
-| 写経・座学が中心 | **AI と対話しながら作る** 新しい学び方 |
-| 学んでも「使える」までは遠い | **学んだその日から AI と一緒に作れる** |
-
-**プログラミングを学びたい人だけでなく、「AI を仕事で使いこなしたい人」にも刺さる教材です。**
-
----
-
-## 📦 これは何？
-
-| 項目 | 内容 |
-|---|---|
-| **対象** | プログラミング未経験者／AI を本格的に使いこなしたい方 |
-| **同時に学べること** | ✅ プログラミング基礎　✅ **AI（Claude Code）への指示の出し方**　✅ AI時代の開発フロー |
-| **必要なもの** | PC（Mac/Windows）と [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)（月$20） |
-| **学べる範囲** | 全20セッションのうち、最初の **Session 0〜3** |
-| **所要時間** | だいたい合計 3〜4時間 |
-| **触れる成果物** | 実際に動く Next.js アプリ + Claude Code とのやりとり |
-| **本編との違い** | 体験版は基礎までを「触る」、本編は **インターネットに公開できるWebアプリを作る** |
-
----
-
-## 🎯 体験版で学べること
-
-| Session | テーマ | 学ぶこと | 所要 |
-|---------|--------|---------|------|
-| 0 | プロジェクトの歩き方 | ツールのセットアップ、学習の進め方 | 30分 |
-| 1 | Git ってなに？ | ファイルの変更を記録するセーブポイント | 30分 |
-| 2 | GitHub を使ってみよう | ブランチとPR、チーム開発の基本 | 45分 |
-| 3 | Web の世界を知ろう | HTML/CSS/JavaScript の役割と開発者ツール | 60分 |
-
----
-
-## 🆚 体験版 vs 本編
-
-|  | 🎁 体験版（無料） | 🎓 本編（MENTA 月5,500円〜） |
+| | セットアップまで | Session 0 から |
 |---|---|---|
-| Session 数 | 0〜3（4セッション） | 0〜20（**全20セッション**） |
-| 動かせるアプリ | Hello World 的ランディング | **本格Webアプリ**（ログイン・DB連携・公開） |
-| Claude Code との対話 | 体験程度 | **本格的な学習プロトコル**（理解度チェック・PR運用） |
-| サポート | なし | **CTOに直接チャット相談** ＋ 理解度に合わせたカリキュラム調整 |
-| 成果物 | 練習ページ | **インターネットに公開された自分のWebアプリ** |
-| 学習記録 | なし | **Obsidian で管理する学習ノート** |
-| 教材アップデート | 公開リポを git pull | upstream から自動取り込み（`npm run update`） |
+| 進め方 | README とセットアップガイド | **AI に聞く** |
+| 次の一手 | 手順どおりに進める | AI が案内する |
+| 困ったとき | エラー文をコピーする | AI にそのまま貼る |
+
+教材を先回りして読破しなくて大丈夫です。迷ったら AI に **「次は何？」** と送ってくださいね。
 
 ---
 
-## ❓ よくある質問
+## 必要なもの
 
-<details>
-<summary><strong>プログラミング未経験でも本当に大丈夫？</strong></summary>
+| 必要なもの | 何に使う？ |
+|---|---|
+| PC（Mac / Windows） | 学習と練習 |
+| GitHub アカウント（無料） | 自分の教材コピーを置く場所 |
+| Git | 変更の記録（Session 2 で意味を学ぶ） |
+| VS Code | ファイルを開くエディタ |
+| AI パートナー | Claude Code または Codex。すでに使えるほうでOK |
 
-はい。Session 0 から「Web ってなに？」「ファイルってどう編集するの？」のレベルから始めます。
-わからないときは Claude Code がいつでも答えてくれるので、独学のように「誰にも聞けない」状況になりません。
-</details>
-
-<details>
-<summary><strong>体験版だけで何ができるようになる？</strong></summary>
-
-「Claude Code とどう対話するか」「コードを書き換えるとどう動きが変わるか」という、**学習スタイルの感覚** を掴めます。
-本編に進むかどうかの判断材料になります。
-</details>
-
-<details>
-<summary><strong>Claude Code の月$20って必要？無料で試せる？</strong></summary>
-
-Claude Code は AI を使うため有料プラン（Claude Pro 月$20）が必要です。
-ただし、解約も自由なので、合わなければ1ヶ月で抜けてOK。
-学習目的なら Pro プランで十分です（本編フル受講中も Pro でOK）。
-</details>
-
-<details>
-<summary><strong>本編は途中でやめられる？</strong></summary>
-
-MENTAプランは月額制なので、**いつでも途中で解約できます**。
-20セッション完走まで継続するも、途中までやって判断するも自由です。
-</details>
-
-<details>
-<summary><strong>30代/40代から始めても遅くない？</strong></summary>
-
-遅くないです。実際 30代〜50代の方も受講されています。
-むしろ「業務知識」がある方が、AI と組んで作りたいものを作るときに強みになります。
-</details>
-
-<details>
-<summary><strong>環境構築でつまずいたら？</strong></summary>
-
-[docs/setup.md](docs/setup.md) に詰まりやすいポイントをまとめてあります。
-それでも解決しないときは [GitHub Issues](https://github.com/ayies128/next-ai-camp-trial/issues) で気軽にどうぞ。返信します。
-</details>
+**Node.js と `npm run dev` は、体験版の学習を始めるためには不要です。**
+ローカルで60秒プレビューの中身を見たい人だけ、Session 0〜3 を終えた後に [セットアップガイドの任意ステップ](docs/setup.md#任意ローカルでプレビューを動かす) を使ってください。
 
 ---
 
-## 🎓 体験版の次のステップ
+## 体験版のあと
 
-「体験版で雰囲気は掴めた、もう少し作ってみたい」となったら、**自分のペースと予算に合わせて** 次のステップを選べます。
+本編では、全24セッションを通じて、HTML / CSS / JavaScript から Next.js、データベース、公開までを1周します。
 
-### 🎯 ステップ1: 月額制で質問しながら進める（おすすめ）
-
-| プラン | 価格 | 特徴 |
-|---|---|---|
-| 🎓 **MENTA（メンター付き）** | ¥5,500/月〜 | **CTO に直接チャット相談**。質問しながら確実に進めたい人向け。いつでも解約可 |
-
-👉 https://menta.work/plan/20251?ref=github-trial
-
-### 📕 ステップ2: 買い切りで黙々と進める
-
-| チャネル | 価格 | こんな人におすすめ |
-|---------|------|------|
-| 📕 Zenn Books | ¥6,600（買い切り） | 自分のペースで黙々と進めたい人 |
-| 📘 note 有料教材 | ¥6,600（買い切り） | note で購入履歴を管理したい人 |
-
-👉 note: https://note.com/ennagara128/n/n209ec4a81a02?ref=github-trial
-👉 Zenn: https://zenn.dev/ennagara128?ref=github-trial
-
-### 📺 無料で続ける選択肢もあり
-
-- 📺 [YouTubeチャンネル](https://www.youtube.com/channel/UC1rXVD9WYsQPQEWZyd-A1KA/?ref=github-trial) — 実演動画を毎日更新中
-
-🎯 **迷ったら MENTA がおすすめ** — 月額制で、わからないところを先に解決できる安心感があります。
-
----
-
-## 📂 リポジトリ構成
-
+```text
+Session  0〜3   道具の正体を知る ← この体験版
+Session  4〜10  Web とプログラミングの基礎
+Session 11〜17  Next.js で Web アプリを作る
+Session 18〜24  データ・設計・公開までつなげる
 ```
+
+「続けて作ってみたい」と思ったら、[MENTA の本編プラン](https://menta.work/plan/20251?ref=github-trial) をご覧ください。
+
+---
+
+## リポジトリの見取り図
+
+```text
 next-ai-camp-trial/
-├── apps/trial-web/   ← 触って動かす Next.js アプリ
-├── docs/             ← セットアップ・学習プロトコル等のガイド
-├── knowledge/        ← Claude Code が使う固定プロンプト集
-└── README.md         ← このファイル
+├── knowledge/lessons/       ← AI が案内する4セッションの教材
+├── knowledge/sessions/      ← 学習の記録（自分用・Gitには保存しない）
+├── practice/                ← Session 1 で使う安全な練習場
+├── docs/                    ← セットアップと全体の案内
+└── apps/trial-web/          ← ブラウザの60秒プレビュー（学習本体とは別）
 ```
 
----
-
-## 📖 詳しい使い方
-
-| ドキュメント | 内容 |
-|-------------|------|
-| [docs/setup.md](docs/setup.md) | 各ツールのインストール手順 |
-| [docs/claude-code-guide.md](docs/claude-code-guide.md) | Claude Code の使い方 |
-| [docs/learning-protocol.md](docs/learning-protocol.md) | 毎回の学習の進め方 |
-| [docs/roadmap-trial.md](docs/roadmap-trial.md) | 体験版のロードマップ |
+| 読みたいもの | ここ |
+|---|---|
+| セットアップの詳しい手順 | [docs/setup.md](docs/setup.md) |
+| 4セッションの全体像 | [docs/roadmap-trial.md](docs/roadmap-trial.md) |
+| 毎回の進め方 | [docs/learning-protocol.md](docs/learning-protocol.md) |
+| 技術の全体地図 | [docs/tech-map.md](docs/tech-map.md) |
+| Claude Code を選んだ人向け | [docs/claude-code-guide.md](docs/claude-code-guide.md) |
+| 言葉を意味から調べる | [knowledge/glossary.md](knowledge/glossary.md) |
 
 ---
 
-## 📜 ライセンス
+## 困ったとき
 
-MIT License — 個人学習・商用利用ともに可
+エラーや分からない画面が出たら、**表示された文章を省略せず AI に貼る**のがいちばん早いです。
+それでも解決しない場合は、[GitHub Issues](https://github.com/ayies128/next-ai-camp-trial/issues) へどうぞ。
 
----
+## ライセンス
 
-## 🙏 最後に: Star でお気持ちを応援してください
-
-ここまで読んでいただきありがとうございます。
-
-もしこの教材が「面白そう」「自分にも使えそう」と感じたら、**⭐ Star をお願いします**！
-
-Star をつけてくれる人が増えると：
-- AI 時代の初心者向け教材を増やすモチベーションになる
-- 他の学習者の方の目に止まりやすくなる（GitHub のアルゴリズム）
-- 教材アップデートの優先順位を上げられる
-
-Star は **30秒でできる、最大の応援** です 🌟
-
-→ [⭐ このリポジトリに Star をつける](https://github.com/ayies128/next-ai-camp-trial/stargazers)
-
-教材について気になることがあれば、お気軽に [GitHub Issues](https://github.com/ayies128/next-ai-camp-trial/issues) からどうぞ。
+[MIT License](./LICENSE)
